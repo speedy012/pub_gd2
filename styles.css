@@ -48,7 +48,5 @@ ul > li::before {
   100% { transform: translateY(650px)}
 }
 
-.pop-up .none {
-  display: none;
-}
+
 
