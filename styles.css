@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pop-w {
+width: 40rem;
+}
+
+.pop-h {
+  height:30rem;
+}
+
+.list {
+  overflow:hidden;
+  list-style-type: disc;
+  list-style-position: inside;
+  overflow-y: auto;
+  padding:4px;
+  
+}
+
+.note-text {
+  float:left;
+  margin:2px;
+  font-size:small;
+}
+
+ul > li::before {
+  font-weight: 700;
+}
+
+.pop-up {
+  animation: Slide_up 3s ease; 
+}
+
+@keyframes Slide_up {
+  0% { transform: translateY(250px)}
+  100% { transform: translateY(0)}
+}
+
+.slide-off {
+  animation: Slide_down 3s ease;
+}
+
+@keyframes Slide_down {
+  0% { transform: translateY(0)}
+  100% { transform: translateY(650px)}
+}
+
+.pop-up .none {
+  display: none;
+}
+
